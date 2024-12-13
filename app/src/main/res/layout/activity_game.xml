@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GameActivity">
+
+    <ImageView
+        android:id="@+id/imgbg"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/skybg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageButton
+        android:id="@+id/imgbtnduckone"
+        android:layout_width="77.1dp"
+        android:layout_height="64.5dp"
+        android:background="@null"
+        android:scaleType="fitXY"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/duckflying" />
+
+
+    <ImageButton
+        android:id="@+id/imgbtnducktwo"
+        android:layout_width="77.1dp"
+        android:layout_height="64.5dp"
+        android:background="@null"
+        android:scaleType="fitXY"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/duckflying" />
+
+
+    <ImageButton
+        android:id="@+id/imgbtnduckthree"
+        android:layout_width="77.1dp"
+        android:layout_height="64.5dp"
+        android:background="@null"
+        android:scaleType="fitXY"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/duckflying" />
+
+
+    <ImageButton
+        android:id="@+id/imgbtnduckfour"
+        android:layout_width="77.1dp"
+        android:layout_height="64.5dp"
+        android:background="@null"
+        android:scaleType="fitXY"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/duckflying" />
+
+
+    <ImageButton
+        android:id="@+id/imgbtnduckfive"
+        android:layout_width="77.1dp"
+        android:layout_height="64.5dp"
+        android:background="@null"
+        android:scaleType="fitXY"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/duckflying" />
+
+    <TextView
+        android:id="@+id/tvScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="000"
+        android:textColor="@color/paleSky"
+        android:textSize="48dp"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tvPause"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <TextView
+        android:id="@+id/tvPause"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="⏸️"
+        android:textColor="@color/paleSky"
+        android:textSize="48dp"
+
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:clickable="true"/>
+
+
+    <TextView
+        android:id="@+id/tvLife"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:text="❤❤❤❤❤"
+        android:textColor="@color/paleSky"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/tvScore"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tvScore" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
